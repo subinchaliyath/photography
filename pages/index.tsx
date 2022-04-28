@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Banner from "../components/banner";
+import PhotoFrame from "../components/photoframe";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,12 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <Banner />
+        <section className="flex flex-wrap justify-center gap-4">
+          <PhotoFrame />
+          <PhotoFrame />
+          <PhotoFrame />
+          <PhotoFrame />
+        </section>
       </main>
     </>
   );
